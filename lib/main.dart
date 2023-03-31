@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:gdsc_nsut_solution_challenge_23/signup.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -23,9 +26,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepOrange,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const SignUpPage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -64,68 +67,5 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      constraints: const BoxConstraints.expand(),
-      decoration: const BoxDecoration(
-        image: DecorationImage(image: AssetImage('assets/image.svg'), fit: BoxFit.fill)
-      ),
-      child:Scaffold(
-        body: SafeArea(
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Wrap(
-                  direction: Axis.horizontal,
-                  spacing: 10.0,
-                  children: <Widget>[const Padding(
-
-                    padding: EdgeInsets.all(30.0),
-                    child: Text(
-                      'Login',
-                      style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                    SizedBox(height: 400),
-                     Padding(padding: EdgeInsets.only(left:30.0, right:30),
-                        child: SizedBox(
-                          height: 55,
-                          child:TextField(
-                            style: TextStyle(fontSize: 12),
-                            decoration: InputDecoration(
-                                border:OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-                                hintText: 'Email'
-                            ),
-                        )
-                        )),
-                     Padding(padding: EdgeInsets.all(30.0),
-                        child: SizedBox(
-                          height: 55,
-                          child: TextField(
-                            style: TextStyle(fontSize: 12),
-                            decoration: InputDecoration(
-                                border:OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-                                hintText: 'Password'
-                            ),
-                          ),
-                        )),
-                    Padding(padding: const EdgeInsets.all(30.0),
-                        child: SizedBox(
-                            width: double.infinity,
-                            child:ElevatedButton(
-                              style:ButtonStyle(shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10)
-                              )))
-                              ,onPressed:(){}, child: const Padding(padding: EdgeInsets.all(10), child:const Text('Login', style: TextStyle(fontSize: 20),)),
-                            )
-                        )),]
-
-              )
-            ],
-          ),
-        ), // This trailing comma makes auto-formatting nicer for build methods.
-      ),
-    );
-  }
-}
+    return const Scaffold();
+}}
