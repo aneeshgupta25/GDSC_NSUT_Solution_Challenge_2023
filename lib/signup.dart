@@ -114,15 +114,15 @@ class _SignUpPageState extends State<SignUpPage> {
                                       style:ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromRGBO(254, 157, 124, 1)),shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
                                           borderRadius: BorderRadius.circular(10)
                                       )))
-                                      ,onPressed:(){}, child: const Padding(padding: EdgeInsets.all(12), child:const Text('Login', style: TextStyle(fontSize: 20),)),
+                                      ,onPressed:(){}, child: const Padding(padding: EdgeInsets.all(12), child:const Text('Sign Up', style: TextStyle(fontSize: 20),)),
                                     )
                                 )),
                             Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: const <Widget>[
-                                  Text('Don\'t have a account? ', style: TextStyle(color: Colors.white),),
-                                  Text('SignUp',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),),
+                                  Text('Already have a account? ', style: TextStyle(color: Colors.white),),
+                                  Text('Login',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),),
                                 ]
                             )
                           ]
