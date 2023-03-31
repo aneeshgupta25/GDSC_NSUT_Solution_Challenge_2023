@@ -1,16 +1,7 @@
 # gdsc_nsut_solution_challenge_23
 
-A new Flutter project.
+## Login Screen ->
+![Login Screen](https://user-images.githubusercontent.com/77202061/229153847-ac147abf-0954-4f68-971d-d735f52e9897.jpg)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Sign Up Screen ->
+![sign up](https://user-images.githubusercontent.com/77202061/229153943-1e46133a-f35e-4335-9dd1-10ec8c738fa5.jpg)
